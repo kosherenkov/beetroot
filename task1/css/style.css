@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+}
+
+.picpos{
+    display: block;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 800px;
+    height: 1000px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.zagolovok {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
