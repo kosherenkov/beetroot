@@ -1,0 +1,23 @@
+ul li {
+    font-size: 20px;
+}
+
+input {
+    margin-right: 15px;
+}
+
+.wrap {
+    width:280px; 
+    height:108px; 
+    overflow:auto; 
+    border:solid 1px #C3E4FE;
+    margin-bottom: 30px;
+}
+
+.zmist li {
+    padding: 5px 0;
+}
+
+.zmist li a {
+    text-decoration: none;
+}
