@@ -1,7 +1,7 @@
 .wrap {
     background-color: #990909;
     width: 1000px;
-    height: 1500px;
+    height: 595px;
     margin: 0 auto;
 
 }
@@ -112,11 +112,11 @@ h4 {
 }
 
 footer{
-    width: 1000px;
+    width: 992px;
     height: 30px;
     background-color: #E95A16;
     color: #fff;
-    margin-top: 50px;
+    margin: 50px 0 0 4px;
     text-align: center;
     line-height: 30px;
 }
