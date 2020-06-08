@@ -96,12 +96,26 @@ h4 {
 }
 
 .for_right_sidebar li {
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
     display: block;
     float: none;
-    border-bottom-style: groove;
 }
+
+.for_right_sidebar li:after {
+    content: "";
+    width: 50%;
+    border-bottom-style: groove;
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    
+}
+
+/*.for_right_sidebar li:first-child {
+    content: "";
+    border-bottom-style: none;
+}*/
 
 .for_right_sidebar li a {
     padding: 0;
