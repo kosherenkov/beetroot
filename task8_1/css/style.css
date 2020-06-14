@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'MisoRU';
+	src: url('fonts/Miso.eot');
+	src: local('Miso'),
+		url('fonts/Miso.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Miso.woff') format('woff');
+	font-weight: normal;
+	font-style: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #fdde7e;
+    color: #333;
+    font-family: 'MisoRU';
+    font-weight: normal;
+    font-style: sans-serif;
+}
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    background: #fff;
+    border: 1px solid #000;
+    min-height: 440px;
+    width: 33.3%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+.col:first-child {
+    margin-left: 30px;
+}
+
+.col:nth-child(2) {
+    min-height: 500px;
+    padding: 15px 0;
+}
+
+.price {
+    color: #02995d;
+    font-size: 70px;
+    font-family: 'MisoRU';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.img {
+    width: 130px;
+    height: 130px;
+}
+
+.title {
+    font-size: 56px;
+    padding: 15px 0;
+}
+
+.descr {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
