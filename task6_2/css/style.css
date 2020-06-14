@@ -117,8 +117,8 @@ label {
     font-size: 14px;
     color: #C0C3C9;
 }
-
-input[type="checkbox"]:checked + .title {
+/* Текст закреслює всі span при активному чекбоксі*/
+input[type="checkbox"]:checked ~ span {
     text-decoration: line-through;
 }
 
