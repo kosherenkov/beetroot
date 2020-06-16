@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+}
+
+p {
+    column-count: 2;
+    column-gap: 60px;
+    text-align: justify;
+}
+
+p::first-letter {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 110px;
+    vertical-align: top;
+    line-height: 1;
+    float: left;
+    margin: 0 25px 0 0;
+}
