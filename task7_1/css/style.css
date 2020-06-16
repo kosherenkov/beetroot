@@ -94,6 +94,10 @@ img.hover {
     display: none;
 }
 
+.col:hover .for_desc_box {
+    color: #fff;
+}
+
 .col:hover img.hover {
     display: inline-block;
 }
