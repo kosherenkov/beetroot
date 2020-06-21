@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1500px;
+    background-color: black;
+    margin: 0 auto;
+    height: 1000px;
+    background-image: url(../img/img.png);
+}
+
+.wrap_left {
+    width: 50%;
+    height: 890px;
+}
+
+.wrap_right {
+    width: 50%;
+    height: 890px;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 110px;
+}
+
+.bottom_img {
+    width: 24px;
+    height: 40px;
+}
