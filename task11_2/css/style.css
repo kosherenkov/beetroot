@@ -37,13 +37,12 @@ body {
 
 .product-card__galary {
     width: 445px;
-    display: flex;
 }
 
-.product-color {
+/*.product-color {
     display: flex;
     justify-content: center;
-}
+}*/
 
 .product-image {
     position: relative;
@@ -64,6 +63,8 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .product-color__item {
