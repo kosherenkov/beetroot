@@ -116,7 +116,7 @@ body {
 }
 
 .product-card__description {
-    width: 230px;
+    min-width: 230px;
 }
 
 .product-card__h1 {
@@ -140,6 +140,7 @@ body {
     list-style: none;
     display: flex;
     padding: 30px 0;
+    cursor: pointer;
 }
 
 .product-card__options {
@@ -155,6 +156,7 @@ body {
     border: 1px solid #616873;
     background-color: #111A28;
     color: #8C9096;
+    cursor: pointer;
 } 
 
 .product-card__btn {
@@ -163,4 +165,5 @@ body {
     background-color: #2A3545;
     border: 1px solid #616873;
     color: #8C9096;
+    cursor: pointer;
 }
