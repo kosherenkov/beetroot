@@ -1,5 +1,6 @@
 @import '../libs/scss/bootstrap-grid.scss';
 @import 'var';
+@import 'normalize.scss';
 
 
 body {
@@ -341,6 +342,9 @@ h1 {
     font-weight: bold;
     color: #fff;
     padding-top: 100px;
+    @media (max-width: 768px) {
+        font-size: 50px;
+    }
 }
 
 .blog__subtitle {
