@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px 50px;
+  grid-template-areas: "gallery__big-pic gallery__big-pic small_pic" "middle_pic1 middle_pic2 middle_pic3";
+  padding: 100px;
+}
+@media (max-width: 768px) {
+  .grid-container {
+    gap: 20px;
+  }
+}
+
+.gallery__big-pic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: gallery__big-pic;
+}
+
+.small_pic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "small_pic1" "small_pic2";
+  grid-area: small_pic;
+}
+
+.pic {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.pic_small1 {
+  padding-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .pic_small1 {
+    padding-bottom: 10px;
+  }
+}
+
+.pic_small2 {
+  padding-top: 25px;
+}
+@media (max-width: 768px) {
+  .pic_small2 {
+    padding-top: 10px;
+  }
+}
+
+.small_pic1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: small_pic1;
+  grid-template-columns: minmax(150px 250px);
+}
+
+.small_pic2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: small_pic2;
+  grid-template-columns: minmax(150px 250px);
+}
+
+.middle_pic1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: middle_pic1;
+}
+
+.middle_pic2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: middle_pic2;
+}
+
+.middle_pic3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: middle_pic3;
+}
+/*# sourceMappingURL=style.css.map */
