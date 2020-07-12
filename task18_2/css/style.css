@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  padding: 90px 240px;
+  background-color: #E2E7EC;
+  grid-template-areas: "big-pic big-pic wrap-small" "big-pic big-pic wrap-small" "wrap-small1 wrap-small2 wrap-small3" "wrap-small1 wrap-small2 wrap-small3";
+}
+
+.big-pic {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: big-pic;
+}
+
+.wrap-small {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "small-pic" "small-desc";
+  grid-area: wrap-small;
+}
+
+.small-pic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: small-pic;
+}
+
+.small-desc {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  position: relative;
+  grid-area: small-desc;
+  background-color: #fff;
+  padding: 30px 30px 10px 30px;
+}
+
+.wrap-small1 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "small-pic1" "small-desc1";
+  grid-area: wrap-small1;
+}
+
+.small-pic1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: small-pic1;
+}
+
+.small-desc1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: small-desc1;
+  position: relative;
+  background-color: #fff;
+  padding: 30px 30px 10px 30px;
+}
+
+.wrap-small2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "small-pic2" "small-desc2";
+  grid-area: wrap-small2;
+}
+
+.small-pic2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: small-pic2;
+}
+
+.small-desc2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: small-desc2;
+  position: relative;
+  background-color: #fff;
+  padding: 30px 30px 10px 30px;
+}
+
+.wrap-small3 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "small-pic3" "small-desc3";
+  grid-area: wrap-small3;
+}
+
+.small-pic3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: small-pic3;
+}
+
+.small-desc3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: small-desc3;
+  position: relative;
+  background-color: #fff;
+  padding: 30px 30px 10px 30px;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.date {
+  font-size: 13px;
+  color: #818181;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 1.3em;
+  color: #1d1d1d;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.3;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+/*# sourceMappingURL=style.css.map */

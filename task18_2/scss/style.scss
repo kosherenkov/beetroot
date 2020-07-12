@@ -1,0 +1,115 @@
+
+@import '../scss/normalize';
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    padding: 90px 240px;
+    background-color: #E2E7EC;
+    grid-template-areas: "big-pic big-pic wrap-small" "big-pic big-pic wrap-small" "wrap-small1 wrap-small2 wrap-small3" "wrap-small1 wrap-small2 wrap-small3";
+  }
+  
+  .big-pic { grid-area: big-pic; }
+  
+  .wrap-small {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "small-pic" "small-desc";
+    grid-area: wrap-small;
+  }
+  
+  .small-pic { grid-area: small-pic; }
+  
+  .small-desc { 
+    position: relative;
+    grid-area: small-desc;
+    background-color: #fff;
+    padding: 30px 30px 10px 30px;
+}
+  
+  .wrap-small1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "small-pic1" "small-desc1";
+    grid-area: wrap-small1;
+  }
+  
+  .small-pic1 { grid-area: small-pic1; }
+  
+  .small-desc1 { 
+      grid-area: small-desc1; 
+      position: relative;
+      background-color: #fff;
+      padding: 30px 30px 10px 30px;
+}
+  
+  .wrap-small2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "small-pic2" "small-desc2";
+    grid-area: wrap-small2;
+  }
+  
+  .small-pic2 { grid-area: small-pic2; }
+  
+  .small-desc2 { 
+      grid-area: small-desc2;
+      position: relative;
+      background-color: #fff;
+      padding: 30px 30px 10px 30px;
+}
+  
+  .wrap-small3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "small-pic3" "small-desc3";
+    grid-area: wrap-small3;
+  }
+  
+  .small-pic3 { grid-area: small-pic3; }
+  
+  .small-desc3 { 
+      grid-area: small-desc3;
+      position: relative;
+      background-color: #fff;
+      padding: 30px 30px 10px 30px;
+}
+
+  .pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .date {
+      font-size: 13px;
+      color: #818181;
+      text-transform: uppercase;
+  }
+
+  .title {
+      font-size: 1.3em;
+      color: #1d1d1d;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 1.3;
+      padding-top: 25px;
+      padding-bottom: 50px;
+  }
+
+  .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+  }
