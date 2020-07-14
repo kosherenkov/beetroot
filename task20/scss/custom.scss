@@ -1,0 +1,173 @@
+/*============  variables =======*/
+$text-color: #181818;
+
+@font-face {
+    font-family: "bebasneue";
+    src: url("../fonts/webfontkit-20161116-130847/bebasneue_regular-webfont.woff") format("woff"),
+        url("../fonts/webfontkit-20161116-130847/bebasneue_regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "bebasneue";
+    src: url("../fonts/webfontkit-20161116-130847/bebasneue_bold-webfont.woff") format("woff"),
+        url("../fonts/webfontkit-20161116-130847/bebasneue_bold-webfont.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "bebasneue";
+    src: url("../fonts/webfontkit-20161116-130847/bebasneue_light-webfont.woff") format("woff"),
+        url("../fonts/webfontkit-20161116-130847/bebasneue_light-webfont.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: $text-color;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: $text-color;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sup {
+    font-size: 0.4em;
+    top: -1.1em;
+}
+
+.sub {
+    font-size: 0.27em;
+    bottom: 0;
+}
+
+.container {
+    padding: 0 calc(50% - 585px);
+    background-color: #9789F9;
+    @media (max-width: 1239px) {
+        padding: 0 calc(50% - 480px);
+    }
+    @media (max-width: 991px) {
+        padding: 0 calc(50% - 360px);
+    }
+    @media (max-width: 767px) {
+        padding: 0 calc(50% - 270px);
+    }
+    @media (max-width: 576px) {
+        padding: 0 100%;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing {
+    padding: 200px 0 185px 0;
+    &__price {
+        font-family: "bebasneue", sans-serif;
+        font-size: 60px;
+        font-weight: 300;
+        text-align: center;
+    }
+    &__title {
+        font-size: 24px;
+        text-align: center;
+    }
+    &__col {
+        background-color: #fff;
+        height: 610px;
+        width: 320px;   
+        position: relative;
+        padding-top: 35px;
+    }
+    &__col_pop {
+        margin: 0 20px;
+        height: 696px;
+        width: 370px;
+        position: relative;
+        top: -43px;
+        padding-top: 45px;
+    }
+    &__item {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: $text-color;
+        line-height: 2.6;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__list_best {
+        padding-top: 25px;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 65px;
+        padding-bottom: 40px;
+    }
+    &__popular {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.btn {
+    font-family: "bebasneue";
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #6FCFFB;
+    height: 55px;
+    width: 200px;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none;
+    cursor: pointer;
+    margin:  0 auto;
+    position: relative;
+    top: 30px;
+    &__active {
+        background-color: #FD8D7B;
+        top: -30px;
+    }
+}
+
+.footer {
+    height: 60px;
+    background-color: #F5F4F9;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    &__active{
+        height: 90px;
+    }
+    &__desc {
+        font-weight: 300;
+        font-size: 11px;
+        color: #a9a9a9;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
