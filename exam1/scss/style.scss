@@ -1,0 +1,55 @@
+@import '../libs/scss/bootstrap-grid.scss';
+@import '../libs/normalize';
+
+//font-family: 'Josefin Sans', sans-serif;
+
+@font-face {
+    font-family: "Aleo Regular";
+    src: url("../fonts/Aleo-Font/Webfont/Regular/aleo-regular-webfont.woff"),
+        url("../fonts/Aleo-Font/Webfont/Regular/aleo-regular-webfont.woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Aleo Bold";
+    src: url("../fonts/Aleo-Font/Webfont/Bold/aleo-bold-webfont.woff"),
+        url("../fonts/Aleo-Font/Webfont/Bold/aleo-bold-webfont.woff2");
+        font-style: normal;
+        font-weight: bold;
+}
+
+body {
+    font-family: "Aleo Regular";
+    font-size: 16px;
+}
+
+.header {
+    background-image: url(../img/bg_header.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    &__conteiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    &__title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 48px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 22px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+ }
