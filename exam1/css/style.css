@@ -4327,11 +4327,6 @@ body {
   height: 100vh;
   background-size: cover;
 }
-.header__conteiner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .header__row {
   display: flex;
   flex-direction: column;
