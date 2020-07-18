@@ -188,6 +188,23 @@ a {
   }
 }
 
+.header__scroll {
+  padding: 150px 0 0 0;
+}
+
+.scroll__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.scroll__img {
+  display: block;
+  margin: 0 auto;
+}
+
 .menu {
   background-color: #5474FD;
   position: sticky;
@@ -465,6 +482,11 @@ a {
     font-size: 22px;
   }
 }
+@media (max-width: 491px) {
+  .whoitworks__items {
+    font-size: 16px;
+  }
+}
 
 .icon-line {
   position: absolute;
@@ -542,6 +564,11 @@ a {
   background-size: cover;
   padding-bottom: 200px;
 }
+@media (max-width: 491px) {
+  .reviews {
+    padding-bottom: 0;
+  }
+}
 .reviews__title {
   font-family: inherit;
   font-size: 36px;
@@ -562,11 +589,12 @@ a {
   margin-right: 55px;
   width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 973px) {
   .reviews__img {
     float: none;
     display: block;
     margin: 0 auto;
+    padding-top: 25px;
   }
 }
 .reviews__author {
@@ -576,7 +604,7 @@ a {
   text-transform: uppercase;
   padding: 55px 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 973px) {
   .reviews__author {
     text-align: center;
   }
@@ -587,7 +615,7 @@ a {
   color: #fefefe;
   padding-right: 50px;
 }
-@media (max-width: 767px) {
+@media (max-width: 973px) {
   .reviews__text {
     padding: 0 50px;
     text-align: justify;

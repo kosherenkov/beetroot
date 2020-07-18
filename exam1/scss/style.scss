@@ -111,6 +111,23 @@ a {
     }
  }
 
+ .header__scroll {
+     padding: 150px 0 0 0;
+ }
+
+ .scroll__title {
+     font-family: $font;
+     font-size: 14px;
+     font-weight: 400;
+     text-transform: capitalize;
+     color: #fff;
+ }
+
+ .scroll__img {
+     display: block;
+     margin: 0 auto;
+ }
+
 
  .menu {
      background-color: $main-color;
@@ -366,6 +383,9 @@ a {
         @media (max-width: 767px){
             font-size: 22px;
         }
+        @media (max-width: 491px){
+            font-size: 16px;
+        }
      }
   } 
 
@@ -439,6 +459,9 @@ a {
       background-repeat: no-repeat;
       background-size: cover;
       padding-bottom: 200px;
+      @media (max-width: 491px){
+          padding-bottom: 0;
+      }
       &__title {
           font-family: inherit;
           font-size: 36px;
@@ -458,10 +481,11 @@ a {
           max-width: 445px;
           margin-right: 55px;
           width: 100%;
-          @media (max-width: 767px){
+          @media (max-width: 973px){
             float: none;
             display: block;
             margin: 0 auto;
+            padding-top: 25px;
         }
       }
       &__author {
@@ -470,7 +494,7 @@ a {
           color: #fefefe;
           text-transform: uppercase;
           padding: 55px 0;
-          @media (max-width: 767px){
+          @media (max-width: 973px){
             text-align: center;
         }
       }
@@ -479,7 +503,7 @@ a {
           font-size: 16px;
           color: #fefefe;
           padding-right: 50px;
-          @media (max-width: 767px){
+          @media (max-width: 973px){
             padding: 0 50px;
             text-align: justify;
             padding-bottom: 25px;
