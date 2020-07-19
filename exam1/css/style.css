@@ -114,6 +114,16 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .header {
+    background-image: url(../img/bg_header_medium.png);
+  }
+}
+@media (max-width: 491px) {
+  .header {
+    background-image: url(../img/bg_header_small.png);
+  }
+}
 .header__conteiner {
   position: relative;
 }
@@ -357,6 +367,16 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 767px) {
+  .choose {
+    background-image: url(../img/bg_who_choose_medium.png);
+  }
+}
+@media (max-width: 491px) {
+  .choose {
+    background-image: url(../img/bg_who_choose_small.png);
+  }
+}
 .choose__img {
   position: relative;
   top: 0;
@@ -491,6 +511,14 @@ a {
 .icon-line {
   position: absolute;
   top: 0;
+  padding-top: 25px;
+  width: 60%;
+  height: 50%;
+}
+@media (max-width: 491px) {
+  .icon-line {
+    display: none;
+  }
 }
 
 .tour {
@@ -502,6 +530,12 @@ a {
 @media (max-width: 767px) {
   .tour {
     padding: 100px 0;
+    background-image: url(../img/bg_spain1_mdium.png);
+  }
+}
+@media (max-width: 491px) {
+  .tour {
+    background-image: url(../img/bg_spain1_small.png);
   }
 }
 .tour__text {
@@ -552,6 +586,12 @@ a {
 @media (max-width: 767px) {
   .nexttour {
     padding: 100px 0;
+    background-image: url(../img/bg_spain2_medium.png);
+  }
+}
+@media (max-width: 491px) {
+  .nexttour {
+    background-image: url(../img/bg_spain2_small.png);
   }
 }
 .nexttour__text {
@@ -564,9 +604,15 @@ a {
   background-size: cover;
   padding-bottom: 200px;
 }
+@media (max-width: 767px) {
+  .reviews {
+    background-image: url(../img/bg_reviews_medium.png);
+  }
+}
 @media (max-width: 491px) {
   .reviews {
     padding-bottom: 0;
+    background-image: url(../img/bg_reviews_small.png);
   }
 }
 .reviews__title {
