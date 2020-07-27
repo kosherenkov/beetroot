@@ -118,3 +118,15 @@ for (var i = 1; i <= cols; i++) {
     document.write("</tr>");
 }
 document.write("</table>");*/
+
+/*2 в степені
+function st(a, s) {
+    let rez = a;
+    for (let i = 1; i < s; i++) {
+        rez = rez * a;
+    }
+
+    return rez;
+}
+
+console.log(st(2, 3));*/
