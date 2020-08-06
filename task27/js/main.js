@@ -197,17 +197,11 @@ document.write("<table> <tbody> <tr>")
 //alert(`${value} має позицію ${index} в ${persons}`)
 for (i = 0; i < persons.length; i++) {
     document.write("<tr> <td>" + i + ": </td> ")
-    document.write("<td>" + persons[person] + "</td> </tr>")
+    document.write("<td>" + persons[i]["name"] + persons[i]["lastname"] + "</td> </tr>")
 }
 /*document.write("<tr> <td>" + index + ": </td> ")
 document.write("<td>" + persons[value] + "</td> </tr>")*/
 document.write("</tbody> </table>")
-
-/*for (i = 0; i < persons.length; i++) {
-    document.write("<tr> <td>" + i + ": </td> ")
-    document.write("<td>" + persons[i] + "</td> </tr>")
-}*/
-
 
 console.log("Сума зарплат: " + sum)
 document.write("<p>Сума зарплат: " + sum + "</p>")
