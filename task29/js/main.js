@@ -15,7 +15,7 @@
     set countSeats(count) {
         if (typeof count != 'number') {
             count = +prompt("Введіть число")
-        }           
+        }
         this._countSeats = count
     }
 
@@ -118,3 +118,4 @@ let colors = [
 let newMarker = new marker
 newMarker.showText()
 console.log(newMarker)
+
