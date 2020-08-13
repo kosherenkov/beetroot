@@ -136,39 +136,120 @@ window.onload = function () {
 }
 
 let node = null;
-let status
+let i = 0
 
 function selectNextNode() {
     resetColor();
-    if (node == null) {
-        let list = document.getElementById("list2");
-        node = list.firstChild;
-        node.style.background = colors[0];
-        return;
-    }
-    // Получение следующего элемента, которые в дереве находиться на одном уровне.
-    node = node.nextSibling;
-    // console.log(node);
-    if (node != null) {
-        node.style.background = colors[1];
-    }
+    /* if (node == null) {
+         let list = document.getElementById("list2");
+         node = list.firstChild;
+         node.style.background = colors[0];
+         return;
+     }
+     // Получение следующего элемента, которые в дереве находиться на одном уровне.
+     node = node.nextSibling;
+     console.log(node);
+ 
+ 
+     if (node != null) {
+         node.style.background = colors[1];
+     }*/
 
-    nextColor()
-    //setTimeout(resetColor, 3000)
-}
-
-
-function nextColor() {
-    node = node.nextSibling;
-    if (node != null) {
-        node.style.background = colors[2];
+    let items = document.querySelectorAll('li')
+    items[i].style.background = colors[i]
+    i++
+    if (i >= colors.length) {
+        i = 0
     }
 }
-
 
 function resetColor() {
     let liList = document.getElementsByTagName("li");
     for (let i = 0; i < liList.length; i++) {
         liList[i].setAttribute("style", "background:white");
+    }
+}
+
+
+
+//!
+
+let divText = document.getElementById('text')
+let buttonClick = document.getElementById('buttonClick')
+
+buttonClick = document.querySelectorAll('.buttonClick')
+//buttonClick.addEventListener('click', hiddinDiv)
+
+for (let button of buttonClick) {
+    button.addEventListener('click', hiddinDiv)
+}
+function hiddinDiv() {
+    // divText.style.display = "none"
+    this.style.visibility = "hidden"
+
+}
+
+/*
+let elem = document.getElementById('buttonID')
+class Menu {
+    handleEvent(event) {
+        switch (event.type) {
+            case "mousedown":
+                elem.innerText = "Натиснута кнопка"
+                break
+            case "mouseup":
+                elem.innerText += "... і відтиснута кнопка"
+                break
+        }
+    }
+}
+
+let menu = new Menu()
+elem.addEventListener('mousedown', menu)
+elem.addEventListener('mouseup', menu)
+
+*/
+
+
+let menuElem = document.getElementById('sweet')
+let titleElem = document.querySelector('.title')
+
+titleElem.addEventListener('click', menuToggler)
+
+function menuToggler() {
+    menuElem.classList.toggle('open')
+}
+
+
+////////////////
+
+let form = document.getElementById('form')
+
+form.addEventListener('submit', (event) => {
+    let errorElems = d.querySelectorAll('.error')
+    for (let errorElem of errorElems) {
+        errorElem.classList.remove('error')
+    }
+    let errorMes = d.querySelectorAll('.error-mes')
+    for (let item of errorMes) {
+        item.remove()
+    }
+
+    validForm()
+})
+
+const d = document
+function validForm() {
+    let required = d.querySelectorAll('.required')
+    let errorText = "Заповніть обов\'язкові поля"
+    let errorBlock = "<span class='error-mes'>" + errorText + "</span>"
+
+    for (let input of required) {
+        if (input.value == "") {
+            input.classList.add('error')
+            input.insertAdjacentHTML("afterend", errorBlock)
+            event.preventDefault()
+        }
+
     }
 }

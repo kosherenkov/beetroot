@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 31</title>
+</head>
+
+<body>
+    <style>
+        #block {
+            background-color: aqua;
+            min-height: 100px;
+            min-width: 200px;
+            position: relative;
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        #block_resize {
+            position: absolute;
+            background-color: #000;
+            bottom: 0;
+            right: 0;
+            cursor: se-resize;
+            width: 12px;
+            height: 12px;
+            margin-top: 9px;
+        }
+
+        #blockText {
+            width: 500px;
+            height: 250px;
+            background-color: aquamarine;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #textarea {
+            display: none;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+        }
+    </style>
+    <p class="title">Ресайз</p>
+    <div id="block">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, earum, consequuntur repellendus culpa illo
+            facilis ipsum maiores distinctio ut accusantium facere velit, tempora vero nihil dignissimos laboriosam iure
+            expedita animi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio error ratione alias repellendus
+            ipsum ab cupiditate sunt quia! Maiores et, error odio nihil ut placeat modi adipisci. Delectus,
+            porro!
+        </span>
+        <div id="block_resize"></div>
+    </div>
+
+    <p class="title">Гаряча клавіша Ctrl+q</p>
+
+    <div id="blockText">
+        <p id="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga aut fugit molestiae architecto
+            expedita
+            inventore quisquam repellendus. Perferendis quo tempora amet fugit molestiae maxime at rerum, sequi cum.
+            Voluptas.
+        </p>
+    </div>
+
+    <textarea rows="4" cols="50" id="textarea">
+
+    </textarea>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
