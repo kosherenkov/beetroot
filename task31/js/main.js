@@ -74,39 +74,47 @@ document.addEventListener('keydown', (event) => {
     const keyCtrl = event.ctrlKey
 
     if (keyName === 'Control') {
-
         return;
     }
 
     if (event.ctrlKey) {
         alert(` Ctrl + ${keyName}`);
     } else {
-        alert(`Key pressed ${keyName}`);
+        return;//alert(`Key pressed ${keyName}`);
     }
 
     if (keyName == 'q') {
         openTextArea()
-    } else {
-        console.log("Ця команда нічого не робить")
+    }
+    if (keyName == 'm') {
+        saveText()
     }
 
 }, false);
 
 function openTextArea() {
-    text.innerText
+    let rez
+    rez = text.innerText
     textDiv.style.display = "none"
     textArea.style.display = "block"
 
-    //textArea.value = [text]
-    console.log(text)
+    textArea.insertAdjacentText('afterbegin', rez)
+
+    return rez
+}
+
+function saveText() {
+    let saveRez = textArea.value
+    text.innerText = ""
+    text.insertAdjacentText('afterbegin', saveRez)
+
+    //console.log(saveRez)
+    textArea.style.display = "none"
+    textDiv.style.display = "block"
 }
 
 
-
-
-
-
-
+new Tablesort(document.getElementById('table-id'));
 
 
 

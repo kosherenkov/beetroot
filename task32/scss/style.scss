@@ -1,0 +1,224 @@
+@import '../libs/_normalize.css';
+
+.conteiner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.game {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tabbedPanels {
+  padding-top: 30%;
+  }
+
+.panelContainer {
+clear: left;
+margin-bottom: 25px;	
+//background-color: #fff;
+}
+
+.tabs {
+margin: 0;
+padding: 0;	
+list-style: none;	
+}
+
+.tabs li {
+float: left;
+width: 33.3%;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+.tabs a {
+display: block;
+text-decoration: none;
+color: #8D91A3;
+font-weight: bold;
+padding:  60px 8px 8px 8px;  
+background-color: #2B3040;
+position: relative;
+font-size: 16px;
+text-transform: uppercase;
+}
+
+.tabs a.active {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.panel img {
+    margin-top: 10px;
+}
+
+.panel p  {
+    margin-bottom: 0px;
+}
+
+.tabs__img {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+}
+
+.tabContentWrap {
+    background-color: #212534;
+}
+
+.tabContentWrap {
+    padding: 45px;
+    position: relative;
+}
+
+.raiting {
+    position: absolute;
+    top: 45px;
+    right: 45px;
+}
+
+.img__tab {
+    float: left;
+    margin-right: 45px;
+    padding-bottom: 30px;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .title {
+      font-size: 32px;
+      color: #fff;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 45px;
+  }
+
+  .description {
+      font-size: 14px;
+      color: #b7bacd;
+      padding-bottom: 45px;
+  }
+
+  .sale {
+      color: #FEDC3F;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-left: -30px;
+  }
+  
+  .price {
+      font-size: 32px;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+  }
+
+  .btn {
+      position: absolute;
+      right: 45px;
+      bottom: 50px;
+      width: 165px ;
+      height: 55px;
+      background-color: #13E28D;
+      color: #fff;
+      text-transform: uppercase;  
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+  }
+
+  .stars {
+      position: absolute;
+      bottom: 75px;
+      left: 60px;
+  }
+
+  .title__text {
+      font-size: 16px;
+      text-transform: uppercase;
+  }
+
+//CALCULATOR start
+
+.my__calc {
+    height: 100vh;
+    background: radial-gradient(circle, skyblue, steelblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 320px;
+    height: 480px;
+    background: #eee;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), -2px -2px 3px rgba(0, 0, 0, 0.2);
+    background-color: #000;
+  }
+  
+  output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background: #fff;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3),
+      inset -1px -1px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .keyboard {
+    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+  }
+  
+  .button {
+    margin: 0.5em 1em;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #313131;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .btnAction {
+      background-color: #F79304;
+  }
+  

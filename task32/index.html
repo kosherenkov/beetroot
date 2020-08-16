@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.4/math.js"></script>
+    <title>Home work 32</title>
+    <!--
+    <style>
+        .acordion__title {
+            border: 1px solid #000;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .acordion__title:not(:last-of-type) {
+            border-bottom: none;
+        }
+
+        .acordion__title.active {
+            border-bottom: 1px solid #000;
+        }
+
+        .acordion__content {
+            border: 1px solid #000;
+            padding: 10px;
+            border-top: 1px solid #fff;
+            margin-bottom: 5px;
+            margin-top: -1px;
+            display: none;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 45px;
+            background: blue;
+            color: #fff
+        }
+
+        .menu {
+            margin: 0;
+            display: flex;
+            list-style: none;
+        }
+
+        .menu__link {
+            color: #fff;
+            margin: 0 15px;
+        }
+
+        .menu__link.active {
+            color: red
+        }
+
+        .section {
+            min-height: 100vh;
+            padding: 5em;
+        }
+    </style>
+    -->
+</head>
+
+<body>
+    <!--Class work START-->
+    <!--
+    <dl class="acordion">
+        <dt class="acordion__title">Title 1</dt>
+        <dd class="acordion__content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos iure nostrum accusantium et vero
+            voluptas sint quas adipisci eaque dolor necessitatibus qui nesciunt, modi laboriosam aspernatur ratione
+            architecto corporis aliquam.
+        </dd>
+        <dt class="acordion__title">Title 2</dt>
+        <dd class="acordion__content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos iure nostrum accusantium et vero
+            voluptas sint quas adipisci eaque dolor necessitatibus qui nesciunt, modi laboriosam aspernatur ratione
+            architecto corporis aliquam.
+        </dd>
+        <dt class="acordion__title">Title 3</dt>
+        <dd class="acordion__content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos iure nostrum accusantium et vero
+            voluptas sint quas adipisci eaque dolor necessitatibus qui nesciunt, modi laboriosam aspernatur ratione
+            architecto corporis aliquam.
+        </dd>
+    </dl>
+    <div class="header">
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#section1">---section1---</a></li>
+            <li class="menu__item"><a class="menu__link" href="#section2">---section2---</a></li>
+            <li class="menu__item"><a class="menu__link" href="#section3">---section3---</a></li>
+            <li class="menu__item"><a class="menu__link" href="#section4">---section4---</a></li>
+        </ul>
+    </div>
+    <section id="section1" class="section">
+        <h1>Section1</h1>
+    </section>
+    <section id="section2" class="section">
+        <h1>Section2</h1>
+    </section>
+    <section id="section3" class="section">
+        <h1>Section3</h1>
+    </section>
+    <section id="section4" class="section">
+        <h1>Section4</h1>
+    </section>-->
+    <!--Class work END-->
+
+    <!--Home work start-->
+    <section class="game">
+        <div class="conteiner">
+            <div class="tabbedPanels">
+                <ul class="tabs">
+                    <li>
+                        <a href="#panel1">information<img src="img/inf.png" alt="information" class="tabs__img"></a>
+                    </li>
+                    <li>
+                        <a href="#panel2">ratings info <img src="img/card.png" alt="card" class="tabs__img"></a>
+                    </li>
+                    <li>
+                        <a href="#panel3">where to by <img src="img/basket.png" alt="" class="tabs__img"></a>
+                    </li>
+                </ul>
+                <div class="panelContainer">
+                    <div id="panel1" class="panel">
+                        <div class="tabContentWrap clearfix">
+                            <img src="img/farcry.png" alt="" class="img__tab">
+                            <img src="img/raiting.png" alt="" class="raiting">
+                            <p class="title">FarCry4</p>
+                            <p class="subtitle">First Released Nov 17, 2014</p>
+                            <p class="description">
+                                In Far Cry 4, players find themselves in Kyrat, a breathtaking,
+                                perilous and wild region of the Hima layas struggling under the regime of a despotic
+                                self-appointed king.
+                            </p>
+                            <img src="img/stars.png" alt="" class="stars">
+                            <p class="sale">20% off!</p>
+                            <p class="price">$59.96</p>
+                            <button class="btn">buy it now</button>
+                        </div>
+                    </div>
+                    <div id="panel2" class="panel">
+                        <div class="tabContentWrap clearfix">
+                            <img src="img/farcry.png" alt="" class="img__tab">
+                            <img src="img/raiting.png" alt="" class="raiting">
+                            <p class="title">FarCry3</p>
+                            <p class="subtitle">First Released Nov 17, 2014</p>
+                            <p class="description">
+                                In Far Cry 4, players find themselves in Kyrat, a breathtaking,
+                                perilous and wild region of the Hima layas struggling under the regime of a despotic
+                                self-appointed king.
+                            </p>
+                            <img src="img/stars.png" alt="" class="stars">
+                            <p class="sale">30% off!</p>
+                            <p class="price">$49.96</p>
+                            <button class="btn">buy it now</button>
+                        </div>
+                    </div>
+                    <div id="panel3" class="panel">
+                        <div class="tabContentWrap clearfix">
+                            <img src="img/farcry.png" alt="" class="img__tab">
+                            <img src="img/raiting.png" alt="" class="raiting">
+                            <p class="title">FarCry2</p>
+                            <p class="subtitle">First Released Nov 17, 2014</p>
+                            <p class="description">
+                                In Far Cry 4, players find themselves in Kyrat, a breathtaking,
+                                perilous and wild region of the Hima layas struggling under the regime of a despotic
+                                self-appointed king.
+                            </p>
+                            <img src="img/stars.png" alt="" class="stars">
+                            <p class="sale">40% off!</p>
+                            <p class="price">$39.96</p>
+                            <button class="btn">buy it now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my__calc">
+        <div class="calculator">
+            <output></output>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+        </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
