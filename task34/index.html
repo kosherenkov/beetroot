@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #map {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <select class="networks">
+        <option value="frankivsk" class="checkbox-network">Frankivsk</option>
+        <option value="lviv" class="checkbox-network">Lviv</option>
+        <option value="kyiv" class="checkbox-network">Kyiv</option>
+    </select>
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgVDqU6Zy5J-plmJTGsIsyYkifN2l3mBw&callback=initMap&libraries=&v=weekly"
+        defer></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
