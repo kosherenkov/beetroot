@@ -57,7 +57,9 @@ section{
 .light-gray-section{
 	background-color: #efeff0;
 }
-img{width:100%;}
+img{
+	width:100%;
+}
 
 /*blockquote*/
 blockquote.bq{
@@ -132,6 +134,14 @@ ul.social-icons li a:hover{
 	display: inline-block;
 	margin-bottom: 20px;
 }
+
+@media (max-width: 991px) {
+	.section-title span {
+		display: flex;
+   		justify-content: center;
+	}
+}
+
 .section-title span:after{
 	content: "";
 	background-color: #7beec7;
@@ -266,6 +276,11 @@ ul.social-icons li a{
 @media (max-width: 991px) {
 	.btn{
 		margin: 20px 0;
+		float: none !important;
+		display: flex;
+		justify-content: center;
+		margin: 20px auto;
+		width: 150px;
 	}
 }
 
@@ -450,9 +465,10 @@ header.main-header .menu-icon .line:nth-child(2){
 	margin: 7px 0;
 	width: 15px;
 }
-header.main-header .menu-icon .line:last-child{width: 20px;}
-@media (max-width: 991px) {
-	header.main-header .menu-icon{display: block;}
+header.main-header .menu-icon .line:last-child{
+	width: 20px;}
+	@media (max-width: 991px) {
+		header.main-header .menu-icon{display: block;}
 }
 
 
@@ -1030,6 +1046,11 @@ footer.main-footer nav.footer-nav ul li a{
 	overflow: hidden;
 	margin: 0 auto;
 }
+
+.author_pic {
+	border-radius: 50%;
+}
+
 .testimonials_single p{margin: 30px 0;}
 .testimonials_single .author_name{
 	padding: 7px;
@@ -1062,7 +1083,7 @@ footer.main-footer nav.footer-nav ul li a{
 }
 .clients_single img{
 	max-width: 100%;
-	max-height: 100px;
+	max-height: 50px;
 	opacity: .5;
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
