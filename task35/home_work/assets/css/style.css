@@ -1224,3 +1224,52 @@ footer.main-footer nav.footer-nav ul li a{
 	    -ms-transform:translateX(-10px);
 	        transform:translateX(-10px);
 }
+
+/*Class work*/
+.hover2{
+	color:#351435;
+	/*border: 2px solid #351435;*/
+	padding: 10px 20px;
+	font-size:20px;
+	position: relative;
+	background-color:#fff;
+	z-index:2;
+	overflow:hidden;
+	transition: all 1s;
+  }
+  .hover2:before {
+	content:"";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index:-1;
+	background-color:#351435;
+	transform:translateX(-100%);
+	transition: all 1s;
+  }
+  
+  .hover2:hover:before {
+	transform:translateX(0);
+  }
+  .hover2:hover {
+	color:#fff;
+	animation: btnHover 1s linear;
+	animation-iteration-count: infinite;
+  }
+
+  @keyframes btnHover {
+	  0% {
+		transform: rotate(0deg);
+	  }
+
+	  100% {
+		transform: rotate(360deg);
+	  }
+  }
+
+  .animation-img:hover {
+	animation: btnHover 1s ease;
+	animation-iteration-count: infinite;
+  }
