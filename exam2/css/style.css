@@ -1,0 +1,134 @@
+@import '../libs/_normalize.css';
+@font-face {
+  font-family: "gothamBold";
+  src: url("../fonts/gothambold/gothamBold.woff");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "gothamBook";
+  src: url("../fonts/gothamBook/GothamBook.woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "gothamMedium";
+  src: url("../fonts/gothamMedium/gotham-medium.woff"), url("../fonts/gothamMedium/gotham-medium.woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.conteiner {
+  max-width: 1170px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  top: 1em;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__item {
+  display: inline;
+}
+
+.header-slider__wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.my-dots {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  top: 50%;
+}
+
+.my-dots li {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: url("https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg");
+  text-align: center;
+  opacity: 0.25;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: white;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slide__img {
+  object-fit: cover;
+}
+
+.slick-slide {
+  height: 100vh !important;
+}
+/*# sourceMappingURL=style.css.map */
