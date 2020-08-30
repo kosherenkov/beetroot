@@ -6,17 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="libs/iconmoon/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgVDqU6Zy5J-plmJTGsIsyYkifN2l3mBw&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Exam 2</title>
 </head>
 
 <body>
+
+    <div class="conteiner">
+
+        <div class="title__wrap">
+            <h1 class="header__title">Simple & mordern</h1>
+            <p class="header__subtitle">We make the world's beautiful every day</p>
+        </div>
+        <header class="header" id="header">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="logo" class="logo_img"></a>
+                <!-- <svg class="logo_img">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>-->
+            </div>
+            <div class="menu__burger">
+                <span class="burger__span"></span>
+            </div>
+            <ul class="menu" id="menu">
+                <li class="menu_link">
+                    <div class="circle"></div>
+                    <div class="circle_fill"></div>
+                    <a href="#projects" class="link">about us</a>
+                </li>
+                <li class="menu_link">
+                    <div class="circle"></div>
+                    <div class="circle_fill"></div>
+                    <a href="#projects" class="link">projects</a>
+                </li>
+                <li class="menu_link">
+                    <div class="circle_fill"></div>
+                    <div class="circle"></div>
+                    <a href="#gallery" class="link">news</a>
+                </li>
+                <li class="menu_link">
+                    <div class="circle_fill"></div>
+                    <div class="circle"></div>
+                    <a href="#contact" class="link">contact</a>
+                </li>
+            </ul>
+
+            <div class="social">
+                <a href="#"><i class="icon-facebook fab"></i></a>
+                <a href="#"><i class="fab icon-twitter"></i></a>
+                <a href="#"><i class="fab icon-instagram"></i></a>
+            </div>
+        </header>
+    </div>
+    <div class="slider_box">
+        <img src="img/sliders/slide1.png" alt="">
+        <img src="img/sliders/slide2.jpg" alt="">
+        <img src="img/sliders/slide3.jpg" alt="">
+    </div>
+    <!--
     <header class="header">
         <div class="header-slider__wrap">
             <img src="img/sliders/slide1.png" alt="slide1" class="slide__img">
-            <img src="img/sliders/slide2.jpg" alt="slide2">
-            <img src="img/sliders/slide3.jpg" alt="slide3">
+            <img src="img/sliders/slide2.jpg" alt="slide2" class="slide__img">
+            <img src="img/sliders/slide3.jpg" alt="slide3" class="slide__img">
         </div>
 
         <nav class="nav">
@@ -32,9 +90,163 @@
             <span class="icon-instagram"></span>
         </nav>
     </header>
+    -->
+    <section class="projects" id="projects">
+        <div class="conteiner">
+            <h2 class="projects__title">
+                what we do
+            </h2>
+            <div class="img_bg"></div>
+            <div class="project__body">
+                <div class="project__body__img animate__animated mov">
+                    <div class="project-img__wrap">
+                        <img src="img/whatWeDo.png" alt="what we do" class="project__img">
+                    </div>
+
+                </div>
+                <div class="project__body__content">
+                    <p class="content__subtitle">One World</p>
+                    <h2 class="content__title">Trade Center</h2>
+                    <p class="content__description">
+                        Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
+                        truth is, our thoughts are very powerful.
+                    </p>
+                    <button class="btn">more details</button>
+                    <p class="icon-map-marker content__address">New York City, United States - 1776 feet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects next_project">
+        <div class="conteiner">
+            <div class="img_bg__next"></div>
+            <div class="project__body change">
+                <div class="project__body__img animate__animated mov2">
+                    <div class="clearpad">
+                        <img src="img/whatWeDo2.jpg" alt="what we do" class="project__img">
+                    </div>
+                </div>
+                <div class=" project__body__content body__content__next">
+                    <p class="content__subtitle">One World</p>
+                    <h2 class="content__title">Trade Center</h2>
+                    <p class="content__description">
+                        Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+                        The
+                        truth is, our thoughts are very powerful.
+                    </p>
+                    <button class="btn">more details</button>
+                    <p class="icon-map-marker content__address">New York City, United States - 1776 feet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="conteiner">
+            <h2 class="gallery__title">gallery</h2>
+            <div class="grid-container animate__animated mov3">
+                <div class="big_pic">
+                    <a href="img/gallery/big.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/big.jpg" alt="big pic" class="gallery-pic">
+                    </a>
+                </div>
+                <div class="small_pic1">
+                    <a href="img/gallery/small1.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/small1.jpg" alt="small1" class="gallery-pic">
+                    </a>
+                </div>
+                <div class="small_pic2">
+                    <a href="img/gallery/small2.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/small2.jpg" alt="small2" class="gallery-pic">
+                    </a>
+                </div>
+                <div class="small_pic3">
+                    <a href="img/gallery/small3.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/small3.jpg" alt="small3" class="gallery-pic">
+                    </a>
+                </div>
+                <div class="small_pic4">
+                    <a href="img/gallery/small4.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/small4.jpg" alt="small3" class="gallery-pic">
+                    </a>
+                </div>
+            </div>
+            <!--
+            <div class="gallery-body">
+                <div class="gallery-body__big">
+                    <a href="img/gallery/big.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/big.jpg" alt="big pic" class="gallery-pic">
+                    </a>
+                </div>
+                <div class="gallery-body__small">
+                    <a href="img/gallery/small1.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/small1.jpg" alt="small1" class="gallery-pic">
+                    </a>
+                    <a href="img/gallery/small2.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/small2.jpg" alt="small2" class="gallery-pic">
+                    </a>
+                    <a href="img/gallery/small3.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/small3.jpg" alt="small3" class="gallery-pic">
+                    </a>
+                    <a href="img/gallery/small4.jpg" data-fancybox data-caption="Caption for single image">
+                        <img src="img/gallery/small4.jpg" alt="small3" class="gallery-pic">
+                    </a>
+                </div>
+                -->
+        </div>
+        <button class="gallery__btn">see more</button>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div id="map" class="map"></div>
+    </section>
+
+    <section class="footer">
+
+        <div class="conteiner">
+            <div class="footer__wrap">
+                <div class="footer__body">
+                    <img src="img/logo.png" alt="logo" class="footer__logo">
+                    <div class="footer__social">
+                        <a href="#" class="footer__icon"><span class="icon-facebook"></span></a>
+                        <a href="#" class="footer__icon"><span class="icon-twitter"></span></a>
+                        <a href="#" class="footer__icon"><span class="icon-instagram"></span></a>
+                    </div>
+                </div>
+                <p class="footer__content"> Copyrights © 2017 Monticello | Made with <span class="icon-heart"></span>
+                    by Ga Huy
+                </p>
+            </div>
+
+            <div class="footer__form__wrap">
+                <div class="footer__form">
+                    <h2 class="form__title">get in tauch</h2>
+                    <div class="wrap__form">
+                        <div class="form__content">
+                            <a class="icon-map-marker form__icon"><span class="form__address">91 Nolan Extensions
+                                    Suite 670</span></a>
+
+                            <a class="icon-phone form__icon"><span class="form__address">+001 356-868-2454</span></a>
+
+                            <a class="icon-inbox form__icon"><span class="form__address">gahuy93@gmail.com</span></a>
+
+                            <a class="icon-clock-o form__icon"><span class="form__address">From 07:05AM to
+                                    19:30PM</span></a>
+                        </div>
+                        <div class="form__inf">
+                            <input type="text" class="inf__input" placeholder="Nme">
+                            <input type="email" class="inf__input" placeholder="Email">
+                            <button class="form__button">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
