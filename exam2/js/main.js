@@ -1,3 +1,4 @@
+//SLIDER TOP
 $('.slider_box').slick({
     arrows: false,
     dots: true,
@@ -8,8 +9,35 @@ $('.slider_box').slick({
 });
 
 
-//google map
+//SLIDER BOTTOM
+$('.news__slider').slick({
+    arrows: false,
+    dots: true,
+    dotsClass: "my-dots-bottom",
+    // autoplay: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 490,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+});
 
+//google map
 let map;
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
