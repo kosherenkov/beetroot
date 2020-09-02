@@ -466,6 +466,11 @@ h1, h2, p, ul {
   padding: 0 50px 0 0;
   margin-left: 20px;
 }
+@media (max-width: 630px) {
+  .body__content__next {
+    padding: 0 20px 0 0;
+  }
+}
 
 .project__body__img {
   position: relative;
@@ -536,6 +541,17 @@ h1, h2, p, ul {
   padding: 80px 0 160px;
 }
 
+.projects__title:before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #2C4058;
+  display: block;
+  position: absolute;
+  left: calc(50% - 55px);
+  top: 50px;
+}
+
 .content__subtitle {
   font-family: "gothamBook";
   font-size: 22px;
@@ -566,9 +582,16 @@ h1, h2, p, ul {
   height: 50px;
   color: #2c4058;
   border: 1px solid #2C4058;
-  background-color: #fff;
+  background-color: rgba(104, 60, 60, 0);
   cursor: pointer;
   margin: 40px 0 60px 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: orangered;
+  color: #fff;
 }
 
 .icon-map-marker:before {
@@ -597,10 +620,64 @@ h1, h2, p, ul {
   color: #fff;
   text-align: center;
   padding: 140px 0 90px 0;
+  position: relative;
+}
+
+.news__title:before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #2C4058;
+  display: block;
+  position: absolute;
+  left: calc(50% - 55px);
+  top: 110px;
 }
 
 .news__slider {
   height: 100%;
+}
+
+.slick-slider {
+  min-width: 0;
+}
+
+.slick-arrow {
+  width: 100%;
+}
+
+.slick-prev {
+  max-width: 100%;
+  position: absolute;
+  top: calc(50% - 100px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  left: -55px;
+  background-color: rgba(100, 55, 55, 0);
+}
+
+.slick-next {
+  max-width: 100%;
+  position: absolute;
+  top: calc(50% - 100px);
+  right: -55px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: rgba(100, 55, 55, 0);
+}
+
+.icon-angle-left:before {
+  content: "";
+  color: #fff;
+}
+
+.icon-angle-right:before {
+  content: "";
+  color: #fff;
 }
 
 .slide__wrapper {
@@ -748,7 +825,18 @@ h1, h2, p, ul {
   margin: 140px 0 100px 0;
   padding: 40px 0 0 0;
   text-transform: uppercase;
-  border-top: 1px solid #2C4058;
+  position: relative;
+}
+
+.gallery__title:before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #2C4058;
+  display: block;
+  position: absolute;
+  left: calc(50% - 55px);
+  top: 10px;
 }
 
 .gallery-body {
@@ -793,6 +881,13 @@ h1, h2, p, ul {
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 140px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.gallery__btn:hover {
+  background-color: orangered;
+  color: #fff;
 }
 
 /*GALLERY END*/
@@ -996,6 +1091,7 @@ h1, h2, p, ul {
   font-size: 44px;
   text-transform: uppercase;
   padding-bottom: 60px;
+  position: relative;
 }
 @media (max-width: 767px) {
   .form__title {
@@ -1006,6 +1102,17 @@ h1, h2, p, ul {
   .form__title {
     font-size: 30px;
   }
+}
+
+.form__title:before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #2C4058;
+  display: block;
+  position: absolute;
+  left: calc(50% - 55px);
+  top: -25px;
 }
 
 .form__icon {
@@ -1047,6 +1154,7 @@ h1, h2, p, ul {
   border: 1px solid #2C4058;
   cursor: pointer;
   margin-bottom: 80px;
+  transition: all 0.5s;
 }
 @media (max-width: 520px) {
   .form__button {
@@ -1054,7 +1162,10 @@ h1, h2, p, ul {
   }
 }
 
+.form__button:hover {
+  background-color: orangered;
+  color: #fff;
+}
+
 /*FOOTER END*/
-/*SLIDER START*/
-/*SLIDER END*/
 /*# sourceMappingURL=style.css.map */

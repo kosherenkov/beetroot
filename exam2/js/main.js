@@ -12,6 +12,8 @@ $('.slider_box').slick({
 //SLIDER BOTTOM
 $('.news__slider').slick({
     arrows: false,
+    prevArrow: '<button type="button" class="slick-prev"><span class="icon-angle-left"></span></button>',
+    nextArrow: '<button type="button" class="slick-next"><span class="icon-angle-right"></span></button>',
     dots: true,
     dotsClass: "my-dots-bottom",
     // autoplay: true,
@@ -235,7 +237,7 @@ function initMap() {
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".header");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > 800);
+        $nav.toggleClass('scrolled', $(this).scrollTop() > 300);
     });
 });
 
