@@ -11,7 +11,7 @@ $('.slider_box').slick({
 
 //SLIDER BOTTOM
 $('.news__slider').slick({
-    arrows: false,
+    arrows: true,
     prevArrow: '<button type="button" class="slick-prev"><span class="icon-angle-left"></span></button>',
     nextArrow: '<button type="button" class="slick-next"><span class="icon-angle-right"></span></button>',
     dots: true,

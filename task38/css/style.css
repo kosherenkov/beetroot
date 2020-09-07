@@ -26,3 +26,41 @@ h1 {
    height: 500px;
    width: 500px;
 }
+
+.btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.divpages {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form__input {
+    width: 250px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.btn__favorite {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+.btn__favorite.active{
+    background-color: aqua;
+}
