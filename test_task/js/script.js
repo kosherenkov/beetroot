@@ -38,3 +38,28 @@ $(".custom-option").on("click", function () {
     $(this).parents(".custom-select").removeClass("opened");
     $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
 });
+
+
+//Slider
+
+$('.slider-big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: true,
+    fade: true,
+    asNavFor: '.slider-small',
+    prevArrow: '<button type="button" class="slick-prev"><img src="../img/arrow_bottom.png"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="../img/arrow_top.png"></button>',
+});
+
+$('.slider-small').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.slider-big',
+    centerMode: false,
+    focusOnSelect: false,
+    infinite: true,
+    vertical: true
+});
