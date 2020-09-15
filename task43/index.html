@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vue start</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <button @click="showForm">Show form</button>
+
+        <form v-on:submit.prevent="onSubmit" v-show="formShow" v-bind:class="{active:formShow}">
+            <label v-html="label"></label>
+            <input type="text" v-model="message">
+            <div v-once>{{message}}</div>
+            <button v-on:click="onSubmit">Submit</button>
+        </form>
+
+        <ul>
+            <li v-for="user in users">{{user.name}}</li>
+        </ul>
+
+        <button @click="inc">+</button>
+        <button>-</button>
+
+        <p>{{counter}}</p>
+
+        <input type="text" v-model="person.name">
+        <input type="text" v-model="person.age">
+
+        <p>Name: {{person.name}}</p>
+        <p>Age: {{person.age}}</p>
+
+        <p>Доступ: {{dostup()}}</p>
+
+
+        <div class="grid">
+            <div class="products">
+                <div class="products__item" v-for="prod in products">
+                    <div class="products__image">
+                        <img v-bind:src="`img/${prod.image}`" alt="">
+                    </div>
+                    <h3 class="product__title">{{prod.title}}</h3>
+                    <div class="product__price">{{prod.price | currency}}</div>
+                    <button class="btn" v-on:click="addToCard(prod)">Add to card</button>
+                </div>
+            </div>
+            <div class="card" v-if="card.length > 0">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="item in card">
+                            <td>{{item.title}}</td>
+                            <td>{{item.price}}</td>
+                            <td>
+                                {{item.quantity}}
+
+                                <div class="quantity">
+                                    <button @click="add(item)">+</button>
+                                    <button @click="sub(item)">-</button>
+                                </div>
+                            </td>
+
+                            <td>{{item.price * item.quantity | currency}}</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>Total: {{total}}</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="emty_card" v-else>
+                <h2>You cart is emty</h2>
+            </div>
+        </div>
+    </div>
+    <div id="title" v-on:click="showTitle">
+
+        <div class="title" v-on:click.stop v-if="show_title">
+            <input type="text" v-model="text_content" />
+        </div>
+        <p class="showText" v-on:click.stop="toggleTitle">{{text_content}}</p>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
