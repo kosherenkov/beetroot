@@ -1,0 +1,254 @@
+@import "./variables.scss";
+@import "./resetcss.css";
+@import "./libs/icomoon/style.css";
+
+body {
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #F7F8F3;
+}
+
+.conteiner {
+    max-width: 1170px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+h1 {
+    color: $mainColor;
+}
+
+//HEADER START
+
+.header {
+    background-image: url('img/bg__header.png');
+    height: 100vh;
+}
+
+.nav__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    border-bottom: 1px solid #BEC6D1;
+    position: fixed;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__items {
+    display: flex;
+    align-items: center;    
+}
+
+.nav__item {
+    padding-right: 45px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.header__btn {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 35px;
+    border-left: 1px solid #BEC6D1;
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.icon-search:before {
+    content: "\f002";
+    z-index: 99;
+    color: #fff;
+  }
+
+.container-3 {
+    padding: 35px;
+    border-left: 1px solid #BEC6D1;
+    border-right: 1px solid #BEC6D1;
+}
+
+.search {
+    background-color: rgba(255, 255, 255, 0);
+    width: 65px;
+}
+
+.search::placeholder {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+}
+
+.header__cart {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 35px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header__title {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header__subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #f7f8f3;
+    margin-top: 40px;
+}
+
+.content__btn {
+    width: 260px;
+    height: 65px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 55px 0 25px 0;
+}
+
+.icon-minus:before {
+    content: "\f068";
+    z-index: 99;
+}
+
+.header__link {
+    font-weight: 300;
+    font-size: 18px;
+    color: #f7f8f3;
+}
+
+.icon-long-arrow-right:before {
+    content: "\f178";
+    z-index: 99;
+  }
+//HEADER END
+
+//ABOUT START
+
+.about-title__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+    border: 5px solid #000;
+    max-width: 690px;
+    margin: 0 auto;
+   // border-image: url('img/border.png') 5 round round;
+   // -webkit-border-image: url('img/border.png') 50 round round; 
+    
+}
+
+.about__title {
+    font-size: 24px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.tab__items {
+    display: flex;
+    margin-top: 120px;
+    padding-left: 100px;
+    border-bottom: 2px solid #CED6AF;
+}
+
+.tab__item {
+    margin-right: 95px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    cursor: pointer;
+    //border-bottom: 2px solid #CED6AF;
+    width: 100%;
+    &.isActive {
+        border-bottom: 3px solid #000;
+    }
+}
+
+.about-body {
+    display: flex;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 160px;
+    width: 100%;
+}
+
+.about-photo {
+    margin-top: 80px;
+    width: 100%;
+    position: relative;
+}
+
+.about-photo__img {
+    width: 100%;
+    margin-bottom: 30px;
+    // position: absolute;
+    // top: 0;
+    // right: -100px;
+}
+
+.about-content__title {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.about-content__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #6e774a;
+    padding-bottom: 35px;
+    line-height: 2;
+}
+//ABOUT END
+
+//PRODUCTS START
+
+.products__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px 0 75px 0;
+}
+
+
+//PRODUCTS END
