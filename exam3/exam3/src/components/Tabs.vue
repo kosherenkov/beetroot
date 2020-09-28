@@ -5,9 +5,11 @@
         <li v-for="tab in tabs" class="tab__item">
           <div
             class="nav-item"
-            :class="{'isActive' : tab.isActive}"
+            :class="{ isActive: tab.isActive }"
             @click="selectTab(tab)"
-          >{{tab.name}}</div>
+          >
+            {{ tab.name }}
+          </div>
         </li>
       </ul>
     </header>

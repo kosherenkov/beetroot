@@ -1,18 +1,30 @@
 <template>
   <header class="header">
-    <div class="nav__wrap">
+    <div class="nav__wrap" :class="{ nav__scroll: navScroll > 100 }">
+      <!-- v-scroll="handleScroll"-->
+      <nav class="nav__burger">
+        <transition name="fade" mode="out-in">
+          <span class="icon-bars" v-if="!show" @click="show = !show"></span>
+          <span class="icon-close" v-else @click="show = !show"></span>
+        </transition>
+        <transition name="fade">
+          <ul v-if="show">
+            <li v-for="item in items">{{ item }}</li>
+          </ul>
+        </transition>
+      </nav>
       <nav class="nav">
         <ul class="nav__items">
           <a href="#">
             <li class="nav__item">home</li>
           </a>
-          <a href="#">
+          <a href="#products">
             <li class="nav__item">products</li>
           </a>
-          <a href="#">
+          <a href="#faqs">
             <li class="nav__item">faqs</li>
           </a>
-          <a href="#">
+          <a href="#footer__contact">
             <li class="nav__item">contact us</li>
           </a>
         </ul>
@@ -47,3 +59,22 @@
     </div>
   </header>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      navScroll: null,
+      items: ["HOME", "PRODUCTS", "FAQ", "CONTACT US"],
+      show: false
+    };
+  },
+  methods: {
+    updateScroll() {
+      this.navScroll = window.scrollY;
+    }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
+  }
+};
+</script>
