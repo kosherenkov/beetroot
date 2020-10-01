@@ -9,7 +9,10 @@
         </transition>
         <transition name="fade">
           <ul v-if="show">
-            <li v-for="item in items">{{ item }}</li>
+            <a href="#"><li>Home</li></a>
+            <a href="#products"><li>Products</li></a>
+            <a href="#faqs"><li>faqs</li></a>
+            <a href="#footer__contact"><li>Contact us</li></a>
           </ul>
         </transition>
       </nav>
