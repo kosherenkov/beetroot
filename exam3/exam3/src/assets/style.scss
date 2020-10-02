@@ -29,6 +29,7 @@ h1 {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .nav__wrap {
@@ -91,6 +92,9 @@ h1 {
     //padding: 0;
     border: none;
   }
+  @media (max-width: 576px) {
+    padding: 10px;
+  }
 }
 
 .icon-search:before {
@@ -106,12 +110,21 @@ h1 {
   @media (max-width: 767px) {
     // padding: 0;
     border: none;
+    display: flex;
+  }
+  @media (max-width: 576px) {
+    padding: 10px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .search {
   background-color: rgba(255, 255, 255, 0);
   width: 65px;
+  @media (max-width: 576px) {
+    width: 60px;
+  }
 }
 
 .search::placeholder {
@@ -127,6 +140,11 @@ h1 {
   padding: 35px;
   @media (max-width: 767px) {
     //padding: 0;
+    display: flex;
+  }
+  @media (max-width: 576px) {
+    padding: 10px;
+    padding-left: 0;
   }
 }
 
@@ -146,6 +164,10 @@ h1 {
   font-size: 55px;
   text-transform: uppercase;
   color: #fff;
+  @media (max-width: 576px) {
+    font-size: 45px;
+    text-align: center;
+  }
 }
 
 .header__subtitle {
@@ -220,8 +242,11 @@ h1 {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 80px;
+    top: 78px;
     width: 100vw;
+    @media (max-width: 576px) {
+      top: 60px;
+    }
   }
 
   .nav__burger li {
@@ -322,6 +347,7 @@ h1 {
     display: flex;
     flex-direction: column;
     border-bottom: none;
+    align-items: flex-start;
   }
 }
 
@@ -386,6 +412,8 @@ h1 {
 .about-photo__img {
   width: 100%;
   margin-bottom: 30px;
+  min-height: 40%;
+  object-fit: cover;
   @media (max-width: 767px) {
   }
   // position: absolute;
@@ -423,6 +451,9 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   margin: 100px 0 75px 0;
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 }
 
 .product__wrap {
@@ -465,6 +496,9 @@ h1 {
   font-size: 18px;
   text-transform: uppercase;
   margin-left: 30px;
+  @media (max-width: 576px) {
+    padding-right: 30px;
+  }
 }
 
 .footer__btn {
@@ -497,7 +531,8 @@ h1 {
   height: 20px;
   position: absolute;
   bottom: -11%;
-  left: 45%;
+  left: 50%;
+  margin-left: -60px;
   z-index: 95;
 }
 
@@ -510,6 +545,7 @@ h1 {
   position: absolute;
   bottom: calc(-11% + 1px);
   left: 50%;
+  margin-left: 20px;
 }
 //PRODUCTS END
 
@@ -636,12 +672,13 @@ h1 {
   background-position: center;
   background-color: rgba(255, 255, 255, 0);
   background-image: url("img/slider_reviews/arrow_right.png");
+  margin-left: 0;
 }
 
 .reviews__slider .slick-prev {
   position: absolute;
   bottom: 0;
-  left: calc(46% - 5px);
+  left: 50%;
   padding: 40px;
   border-left: 1px solid #f7f8f3;
   border-top: 1px solid #f7f8f3;
@@ -650,6 +687,8 @@ h1 {
   background-position: center;
   background-color: rgba(255, 255, 255, 0);
   background-image: url("img/slider_reviews/arrow_left.png");
+  transform: translateX(-100%);
+  margin-left: 0;
 }
 //REVIEWS END
 //FOOTER START

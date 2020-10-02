@@ -28,7 +28,7 @@ export default {
         slidesToShow: 3,
         responsive: [
           {
-            breakpoint: 767,
+            breakpoint: 940,
             settings: {
               slidesToShow: 2
             }
