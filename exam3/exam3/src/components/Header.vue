@@ -1,5 +1,6 @@
 <template>
   <header class="header">
+    <Popup v-if="popupVisible" @closePopup="closePopup" />
     <div class="nav__wrap" :class="{ nav__scroll: navScroll > 100 }">
       <!-- v-scroll="handleScroll"-->
       <nav class="nav__burger">
@@ -34,7 +35,9 @@
       </nav>
       <div class="logo">CBD</div>
       <div class="header__search">
-        <button class="header__btn">Login</button>
+        <button class="header__btn" @click="showPopup">
+          Login
+        </button>
         <div class="container-3">
           <span class="icon-search"></span>
           <input class="search" placeholder="Search..." type="search" />
@@ -63,17 +66,28 @@
   </header>
 </template>
 <script>
+import Popup from "./Popup";
 export default {
+  components: {
+    Popup
+  },
   data() {
     return {
       navScroll: null,
       items: ["HOME", "PRODUCTS", "FAQ", "CONTACT US"],
-      show: false
+      show: false,
+      popupVisible: false
     };
   },
   methods: {
     updateScroll() {
       this.navScroll = window.scrollY;
+    },
+    showPopup() {
+      this.popupVisible = true;
+    },
+    closePopup() {
+      this.popupVisible = false;
     }
   },
   mounted() {
