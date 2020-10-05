@@ -6,5 +6,5 @@ module.exports = {
       }
     }
   },
-  publicPath: process.env.NODE_ENV === "production" ? "/exam3/exam3/" : "/"
+  publicPath: process.env.NODE_ENV === "production" ? "/beetroot/" : "/"
 };
